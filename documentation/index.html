@@ -1,0 +1,1010 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<title>Hotel Finder - Responsive Hotel HTML5 Template</title>
+    <!-- Framework CSS -->
+<link rel="stylesheet" href="style.css" media="screen" />
+<link href="assets/src/prettify.css" type="text/css" rel="stylesheet" />
+    <script src="assets/src/prettify.js" type="text/javascript"></script>
+    <style type="text/css" media="screen">
+        p, table, hr, .box { margin-bottom:10px; }
+        .box p { margin-bottom:10px; }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h1 align="center" class="center alt">&ldquo;Hotel Finder &rdquo; Documentation by &ldquo;BestWebSoft &rdquo; v1.1</h1>
+    <hr>
+    <h1 align="center">&ldquo;Hotel Finder - Responsive Hotel HTML5 Template&rdquo;</h1>
+    <p class="subtitle">Modified: 14/09/2017<br>
+                    By: BestWebsoft<br>
+                    Email: <a href="mailto:envato@bestwebsoft.com">support@bestwebsoft.zendesk.com</a><br>
+                    Website: <a href="https://bestwebsoft.com/">https://beswebsoft.com/</a><br>
+    </p>
+
+    <div class="span-12 last">
+        <p class="prepend-top append-0">Thank you for purchasing our HTML template. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="https://themeforest.net/user/bestwebsoft">here</a>. Thanks!</p>
+    </div>
+    <div class="separater"></div>
+        <h2 id="top" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#htmlStructure">HTML Structure</a>
+                <ol>
+                    <li><a href="#normalpages">Standard Pages</a></li>
+                    <li><a href="#homepage">Home Page</a></li>
+                    <li><a href="#slider">Slider</a></li>
+                    <li><a href="#blogpage">Blog Page</a></li>
+                    <li><a href="#searchpage">Search Pages</a></li>
+                    <li><a href="#searchresultgrid">Search Results Grid view</a></li>
+                    <li><a href="#searchresultrow">Search Results Row view</a></li>
+                    <li><a href="#hotelpage">Hotel Pages</a></li>
+                    <li><a href="#hotelpagecontent">Hotel Content</a></li>
+                    <li><a href="#userpage">User Page</a></li>
+                </ol>
+              </li>
+            <li><a href="#cssFiles">CSS Files and Structure</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#credits">Sources and Credits</a></li>
+            <li><a href="#changelog">Changelog</a></li> 
+        </ol>
+        <div class="separater"></div>
+</div>
+<div class="wrapper">
+<h3 id="htmlStructure"><strong>I) HTML Structure</strong> - <a href="#top">top</a></h3>
+<p>Hotel Finder is a responsive HTML5 template based on Bootstrap. Due to the in-line commenting that is available throughout the HTML, you can always be aware of the layout section you are currently in. Each page is based on the following structure: </p>
+        <pre id="normalpages" class="prettyprint lines">
+&ltbody>
+    &ltdiv class="htlfndr-loader-overlay">&lt/div>
+    &ltdiv class="htlfndr-wrapper">
+        &ltheader>
+            &ltdiv class="htlfndr-top-header">
+                &ltdiv class="navbar navbar-default htlfndr-blue-hover-nav">
+                    &ltdiv class="container">
+                        &lt!-- Brand and toggle get grouped for better mobile display -->
+                        &ltdiv class="navbar-header">
+                            {LOGIN SIGHN/SINGUP LINKS, CURRENCY ARGUMENTS, LANGUAGE ARGUMENTS AND LOGO}
+                        &lt/div>&lt!-- .navbar-header -->
+                        &ltdiv class="collapse navbar-collapse navbar-right" id="htlfndr-first-nav">
+                            {LOGIN SIGHN IN LINKS, LOGIN SIGHN UP LINKS,CURRENCY ARGUMENTS,LANGUAGE ARGUMENTS}
+                        &lt/div>&lt!-- .collapse.navbar-collapse -->
+                    &lt/div>&lt!-- .container -->
+                &lt/div>&lt!-- .navbar.navbar-default.htlfndr-blue-hover-nav-->
+            &lt/div>&lt!-- .htlfndr-top-header -->
+            &lt!-- Start of main navigation -->
+            &ltdiv class="htlfndr-under-header">
+                &ltnav class="navbar navbar-default">
+                    &ltdiv class="container">
+                        &ltdiv class="navbar-header">
+                            {RESPONSIVE MENU}
+                        &lt/div>&lt!-- .navbar-header -->
+                        &ltdiv class="collapse navbar-collapse" id="htlfndr-main-nav">
+                            {MAIN MENU}
+                        &lt/div>&lt!-- .collapse.navbar-collapse -->
+                    &lt/div>&lt!-- .container -->
+                &lt/nav>&lt!-- .navbar.navbar-default.htlfndr-blue-hover-nav -->
+            &lt/div>&lt!-- .htlfndr-under-header -->
+            &lt!-- End of main navigation -->
+            &ltnoscript>&lth2>You have JavaScript disabled!&lt/h2>&lt/noscript>
+        &lt/header>
+        &ltdiv class="container">
+            &ltdiv class="row htlfndr-page-content">
+                &ltmain id="htlfndr-main-content" role="main">
+                    {PAGE CONTENT}
+                &lt/main>
+            &lt/div>
+        &lt/div>
+
+        &ltfooter class="htlfndr-footer">
+            &ltbutton class="htlfndr-button-to-top" role="button">&ltspan>Back to top&lt/span>&lt/button>&lt!-Button To top->
+            &ltdiv class="widget-wrapper">
+                &ltdiv class="container">
+                    &ltdiv class="row">
+                        &ltaside class="col-xs-12 col-sm-6 col-md-3 htlfndr-widget-column">
+                            &ltdiv class="widget">
+                                {LOGO, FOOTER CONTENT}
+                            &lt/div>&lt!-- .widget -->
+                        &lt/aside>&lt!-- .col-xs-12.col-sm-6.col-md-3.htlfndr-widget-column -->
+                        &ltaside class="col-xs-12 col-sm-6 col-md-3 htlfndr-widget-column">
+                            &ltdiv class="widget">
+                                {CONTACT INFO}
+                            &lt/div>&lt!-- .widget -->
+                        &lt/aside>&lt!-- .col-xs-12.col-sm-6.col-md-3.htlfndr-widget-column -->
+                        &ltaside class="col-xs-12 col-sm-6 col-md-3 htlfndr-widget-column">
+                            &ltdiv class="widget">
+                                &lth3 class="widget-title">pages&lt/h3>
+                                {FOOTER MENU}
+                            &lt/div>&lt!-- .widget -->
+                        &lt/aside>&lt!-- .col-xs-12.col-sm-6.col-md-3.htlfndr-widget-column -->
+                        &ltaside class="col-xs-12 col-sm-6 col-md-3 htlfndr-widget-column">
+                            &ltdiv class="widget">
+                                &lth3 class="widget-title">follow us&lt/h3>
+                                &ltdiv class="htlfndr-follow-plugin">
+                                    {FOOTER SOCIAL LINKS}
+                                &lt/div>&lt!-- .htlfndr-follow-plugin -->
+                                &lt!-- End of Follow Us buttons -->
+                                &lthr />
+                                &lth3 class="widget-title">mailing list&lt/h3>
+                                {INPUT FORM}
+                            &lt/div>&lt!-- .widget -->
+                        &lt/aside>&lt!-- .col-xs-12.col-sm-6.col-md-3.htlfndr-widget-column -->
+                    &lt/div>&lt!-- .row -->
+                &lt/div>&lt!-- .container -->
+            &lt/div>&lt!-- .widget-wrapper -->
+
+            &ltdiv class="htlfndr-copyright">
+                &ltdiv class="container" role="contentinfo">
+                    {COPYRIGHT}
+                &lt/div>&lt!-- .container -->
+            &lt/div>&lt!-- .htlfndr-copyright -->
+        &lt/footer>
+    &lt/div>&lt!-- .htlfndr-wrapper -->
+    &ltdiv id="htlfndr-sing-up">
+        {SINGUP POPUP}
+    &lt/div>    
+    &ltdiv id="htlfndr-sing-in">
+        {SINGIN POPUP}
+    &lt/div>    
+&lt/body>
+        </pre>
+        <div class="separater"></div>
+
+
+
+<h6 id="homepage">Home page</h6>
+        <p>The homepage has the same grid, and yet there are several slight differences. It comes with a slider and sticky tabs that allow searching for a specialist, booking an appointment and asking questions. Here is the general structure.</p>
+        <pre class="prettyprint lines">
+&ltbody>
+    &ltdiv class="htlfndr-loader-overlay">&lt/div>
+    &ltdiv class="htlfndr-wrapper">
+        &ltheader>
+            &ltdiv class="htlfndr-top-header">
+                &ltdiv class="navbar navbar-default htlfndr-blue-hover-nav">
+                    &ltdiv class="container">
+                        &lt!-- Brand and toggle get grouped for better mobile display -->
+                        &ltdiv class="navbar-header">
+                            {LOGIN SIGHN/SINGUP LINKS, CURRENCY ARGUMENTS, LANGUAGE ARGUMENTS AND LOGO}
+                        &lt/div>&lt!-- .navbar-header -->
+                        &ltdiv class="collapse navbar-collapse navbar-right" id="htlfndr-first-nav">
+                            {LOGIN SIGHN IN LINKS, LOGIN SIGHN UP LINKS,CURRENCY ARGUMENTS,LANGUAGE ARGUMENTS}
+                        &lt/div>&lt!-- .collapse.navbar-collapse -->
+                    &lt/div>&lt!-- .container -->
+                &lt/div>&lt!-- .navbar.navbar-default.htlfndr-blue-hover-nav-->
+            &lt/div>&lt!-- .htlfndr-top-header -->
+            &lt!-- Start of main navigation -->
+            &ltdiv class="htlfndr-under-header">
+                &ltnav class="navbar navbar-default">
+                    &ltdiv class="container">
+                        &ltdiv class="navbar-header">
+                            {RESPONSIVE MENU}
+                        &lt/div>&lt!-- .navbar-header -->
+                        &ltdiv class="collapse navbar-collapse" id="htlfndr-main-nav">
+                            {MAIN MENU}
+                        &lt/div>&lt!-- .collapse.navbar-collapse -->
+                    &lt/div>&lt!-- .container -->
+                &lt/nav>&lt!-- .navbar.navbar-default.htlfndr-blue-hover-nav -->
+            &lt/div>&lt!-- .htlfndr-under-header -->
+            &lt!-- End of main navigation -->
+            &ltsection class="htlfndr-slider-section">
+                &ltdiv class="owl-carousel">
+                    {SLIDER}
+                &lt/div>
+                &lt!-- Search form aside start -->
+                &ltaside class="htlfndr-form-in-slider htlfndr-search-form-inline">
+                    &ltdiv class="container">
+                        &lth5>Where are you going?&lt/h5>
+                        &ltform action="search-result.html" name="search-hotel" id="search-hotel" 
+                        class="htlfndr-search-form">
+                            &ltdiv id="htlfndr-input-1" class="htlfndr-input-wrapper">
+                                {INPUT SEARCH}
+                            &lt/div>&lt!-- #htlfndr-input-1.htlfndr-input-wrapper -->
+
+                            &ltdiv id="htlfndr-input-date-in" class="htlfndr-input-wrapper">
+                                {INITIAL SORTER ORDER}
+                            &lt/div>&lt!-- #htlfndr-input-date-in.htlfndr-input-wrapper -->
+
+                            &ltdiv id="htlfndr-input-date-out" class="htlfndr-input-wrapper">
+                                {FINAL SORTER ORDER}
+                            &lt/div>&lt!-- #htlfndr-input-date-out.htlfndr-input-wrapper -->
+
+                            &ltdiv id="htlfndr-input-4" class="htlfndr-input-wrapper">
+                                {QUERY FILTER ARGUMENTS}
+                            &lt/div>&lt!-- #htlfndr-input-4.htlfndr-input-wrapper -->
+                            
+                            &ltdiv id="htlfndr-input-5" class="htlfndr-input-wrapper">
+                                &ltinput type="submit" value="search" />
+                            &lt/div>&lt!-- #htlfndr-input-5.htlfndr-input-wrapper -->
+                        &lt/form>
+                    &lt/div>&lt!-- .container -->
+                &lt/aside>&lt!-- .htlfndr-form-in-slider.container-fluid -->
+                &lt!-- Search form aside stop -->
+            &lt/section>&lt!-- .htlfndr-slider-section -->
+                &lt!-- End of slider section -->
+            &ltnoscript>&lth2>You have JavaScript disabled!&lt/h2>&lt/noscript>
+        &lt/header>
+        &ltmain role="main">
+            {CUSTOM PAGE CONTENT}
+        &lt/main>
+        {FOOTER}
+    &lt/div>&lt!-- .htlfndr-wrapper -->
+    &ltdiv id="htlfndr-sing-up">
+        {SINGUP POPUP}
+    &lt/div>    
+    &ltdiv id="htlfndr-sing-in">
+        {SINGIN POPUP}
+    &lt/div>    
+&lt/body>
+        </pre>        
+        <div class="separater"></div>
+        <h5 id="slider">Top slider</h5>
+        <p>Owl Carousel Slider is used as a homepage slider in this template. The general structure is as follows:</p>
+        <pre class="prettyprint lines">
+           &ltdiv class="htlfndr-slide-wrapper">
+                &ltimg src="http://placehold.it/1824x565" alt="slide-image-1" />
+                &ltdiv class="htlfndr-slide-data container">        
+                    &ltdiv class="htlfndr-slide-rating-stars">
+                        {slide rating stars}
+                    &lt/div>&lt!-- .htlfndr-slide-rating-stars -->
+                    {slide text content}
+                    &ltdiv class="htlfndr-slider-under-title-line">&lt/div>
+                &lt/div>&lt!-- .htlfndr-slide-data.container -->
+            &lt/div>&lt!-- .htlfndr-slide-wrapper-->
+            &ltdiv class="htlfndr-slide-wrapper">
+                &ltimg src="http://placehold.it/1824x565" alt="slide-image-2" />
+                &ltdiv class="htlfndr-slide-data container">        
+                    &ltdiv class="htlfndr-slide-rating-stars">
+                        {slide rating stars}
+                    &lt/div>&lt!-- .htlfndr-slide-rating-stars -->
+                    {slide text content}
+                    &ltdiv class="htlfndr-slider-under-title-line">&lt/div>
+                &lt/div>&lt!-- .htlfndr-slide-data.container -->
+            &lt/div>&lt!-- .htlfndr-slide-wrapper-->
+            &ltdiv class="htlfndr-slide-wrapper">
+                &ltimg src="http://placehold.it/1824x565" alt="slide-image-3" />
+                &ltdiv class="htlfndr-slide-data container">        
+                    &ltdiv class="htlfndr-slide-rating-stars">
+                        {slide rating stars}
+                    &lt/div>&lt!-- .htlfndr-slide-rating-stars -->
+                    {slide text content}
+                    &ltdiv class="htlfndr-slider-under-title-line">&lt/div>
+                &lt/div>&lt!-- .htlfndr-slide-data.container -->
+            &lt/div>&lt!-- .htlfndr-slide-wrapper-->
+        </pre>        
+        <p>It is necessary to add  <strong>owl.carousel.css</strong> and <strong>owl.carousel.min.js</strong> plugin files to this page.</p>
+        <pre class="prettyprint lines">
+&ltlink rel="stylesheet" href="owl.carousel.css"/>
+&ltscript type="text/javascript" src="js/owl.carousel.min.js"&gt&lt/script&gt
+        </pre>
+        <p>To get the plugin working, please use the following script in script.js file.</p>
+        <pre class="prettyprint lines">
+    $( '.owl-carousel' ).owlCarousel({
+        singleItem: true,
+        autoPlay: 3000,
+        pagination: false,
+        paginationSpeed: 1000
+    });
+        </pre>    
+        with arrow
+        <pre class="prettyprint lines">
+    $( '.owl-carousel' ).owlCarousel({
+       singleItem: true,
+        autoPlay: 3000,
+        pagination: true,
+        paginationSpeed: 1000,
+        navigation: true,
+        navigationText: ['&lti class="fa fa-angle-left">&lt/i>', '&lti class="fa fa-angle-right">&lt/i>'],
+        afterInit: htlfndr_move_buttons
+    });
+        </pre>
+        <p>For more information on this plugin, please check plugin source code (in js folder).</p>
+        <div class="separater"></div>
+
+<h6 id="blogpage">Blog page/Blog single page</h6>
+        <p>The Blog Page has a widget. Here is the general structure of the Page.</p>
+        <pre class="prettyprint lines">
+&ltbody>
+    &ltdiv class="htlfndr-loader-overlay">&lt/div>
+    &ltdiv class="htlfndr-wrapper">
+        {HEADER}
+       &ltdiv class="container">
+            &ltdiv class="row">
+                &ltmain id="htlfndr-main-content" class="col-sm-12 col-md-8 col-lg-9" role="main">
+                    {PAGE CONTENT}
+                &lt/main>
+                &ltaside id="htlfndr-right-sidebar" class="col-sm-12 col-md-4 col-lg-3
+                 htlfndr-sidebar htlfndr-sidebar-in-right" role="complementary">
+                    {CUSTOM PAGE WIDGET AREA}
+                &lt/aside>
+            &lt/div>
+        &lt/div>
+       {FOOTER}
+    &lt/div>&lt!-- .htlfndr-wrapper -->
+    &ltdiv id="htlfndr-sing-up">
+        {SINGUP POPUP}
+    &lt/div>    
+    &ltdiv id="htlfndr-sing-in">
+        {SINGIN POPUP}
+    &lt/div>    
+&lt/body>
+        </pre>        
+        <div class="separater"></div>
+
+<h6 id="searchpage">Search page</h6>
+        <p>The Search Page has search widget and progress bar. Here is the general structure of the Page.</p>
+        <pre class="prettyprint lines">
+&ltbody>
+    &ltdiv class="htlfndr-loader-overlay">&lt/div>
+    &ltdiv class="htlfndr-wrapper">
+        {HEADER}
+       &ltdiv class="container">
+           &ltdiv class="htlfndr-steps">
+                &ltul class="htlfndr-progress">
+                    {PROGRESS STEPS}
+                &lt/ul>
+            &lt/div>
+            &ltdiv class="row">
+                &ltaside class="col-sm-4 col-md-3 col-lg-3 htlfndr-sidebar htlfndr-sidebar-in-left" 
+                role="complementary">
+                    {SEARCH RESULTS}
+                &lt/aside>
+                &ltmain class="col-sm-8 col-md-9 col-lg-9 htlfndr-search-result htlfndr-row-view" role="main">
+                    {SEARCH WIDGET}
+                &lt/main>
+            &lt/div>
+        &lt/div>
+       {FOOTER}
+    &lt/div>&lt!-- .htlfndr-wrapper -->
+    &ltdiv id="htlfndr-sing-up">
+        {SINGUP POPUP}
+    &lt/div>    
+    &ltdiv id="htlfndr-sing-in">
+        {SINGIN POPUP}
+    &lt/div>    
+&lt/body>
+        </pre>        
+        <div class="separater"></div>
+
+    <h5 id="searchresultgrid">PROGRESS STEPS</h5>
+    <p>Here is the general structure of the progress bar.</p>
+        <pre class="prettyprint lines">
+&ltdiv class="htlfndr-steps">
+    &ltul class="htlfndr-progress">
+        &ltli class="htlfndr-active-step">
+            &ltspan class="htlfndr-step-number">1&lt/span> &ltspan class="htlfndr-step-description">results&lt/span>&lt/a>
+        &lt/li>
+        &ltli>
+            &ltspan class="htlfndr-step-number">2&lt/span> &ltspan class="htlfndr-step-description">hotel&lt/span>
+        &lt/li>
+        &ltli>
+            &ltspan class="htlfndr-step-number">3&lt/span> &ltspan class="htlfndr-step-description">room&lt/span>
+        &lt/li>
+        &ltli>
+            &ltspan class="htlfndr-step-number">4&lt/span> &ltspan class="htlfndr-step-description">payment&lt/span>
+        &lt/li>
+    &lt/ul>
+&lt/div>&lt!-- .htlfndr-steps -->
+</pre>        
+        <div class="separater"></div>
+
+
+    <h5 id="searchresultgrid">SEARCH RESULTS grid view</h5>
+    <p>The Search Reasults Page can display search records in GridView and RowView . Here is the structure of the GridView.</p>
+        <pre class="prettyprint lines">
+&lth2 class="htlfndr-search-result-title">&lt/h2>
+&ltdiv class="htlfndr-search-result-sorting row">
+    &ltdiv class="col-md-12">
+        &ltdiv class="dropdown htlfndr-sort">
+            {QUERY FILTER ARGUMENTS}
+        &lt/div>
+        &ltdiv class="dropdown htlfndr-show-number-hotels">
+            {POST COUNT}
+        &lt/div>
+        &ltdiv class="htlfndr-view">
+            {VIEW TYPE}
+        &lt/div>
+    &lt/div>
+&lt/div>
+&ltsection class="row htlfndr-search-result-content">
+    &ltdiv class="htlfndr-hotel-post-wrapper col-md-12">
+        &ltdiv class="htlfndr-hotel-post">
+            &lta class="htlfndr-hotel-thumbnail" href="hotel-page-v1.html">
+                &ltimg alt="pic1" src="http://placehold.it/260x155">
+            &lt/a>
+            &ltdiv class="htlfndr-hotel-description">
+                &ltdiv class="htlfndr-description-content">
+                    &lth2 class="htlfndr-entry-title">{TITLE}&lt/h2>
+                    &ltdiv class="htlfndr-rating-stars" data-rating="5">
+                        {rating stars}
+                    &lt/div>
+                    &lth5 class="htlfndr-hotel-location">{LOCATION}&lt/h5>
+                    &ltp class="htlfndr-last-booking">{TEXT}&lt/p>
+                &lt/div>
+                &lta class="htlfndr-select-hotel-button" role="button" href="hotel-page-v1.html">select&lt/a>
+                &ltdiv class="htlfndr-hotel-price">
+                    {PRICE INFO}
+                &lt/div>
+            &lt/div>
+        &lt/div>    
+    &lt/div>
+    &ltdiv class="htlfndr-hotel-post-wrapper col-md-12">
+        &ltdiv class="htlfndr-hotel-post">
+            &lta class="htlfndr-hotel-thumbnail" href="hotel-page-v2.html">
+                &ltimg alt="pic2" src="http://placehold.it/260x155">
+            &lt/a>
+            &ltdiv class="htlfndr-hotel-description">
+                &ltdiv class="htlfndr-description-content">
+                    &lth2 class="htlfndr-entry-title">{TITLE}&lt/h2>
+                    &ltdiv class="htlfndr-rating-stars" data-rating="5">
+                        {rating stars}
+                    &lt/div>
+                    &lth5 class="htlfndr-hotel-location">{LOCATION}&lt/h5>
+                    &ltp class="htlfndr-last-booking">{TEXT}&lt/p>
+                &lt/div>
+                &lta class="htlfndr-select-hotel-button" role="button" href="hotel-page-v1.html">select&lt/a>
+                &ltdiv class="htlfndr-hotel-price">
+                    {PRICE INFO}
+                &lt/div>
+            &lt/div>
+        &lt/div>    
+    &lt/div>
+&lt/section>
+        </pre>
+        <div class="separater"></div>
+        <h5 id="searchresultrow">SEARCH RESULTS row view</h5>
+        <p>Here is the structure of the RowView.</p>
+        <pre class="prettyprint lines">
+&lth2 class="htlfndr-search-result-title">&lt/h2>
+&ltdiv class="htlfndr-search-result-sorting row">
+    &ltdiv class="col-md-12">
+        &ltdiv class="dropdown htlfndr-sort">
+            {QUERY FILTER ARGUMENTS}
+        &lt/div>
+        &ltdiv class="dropdown htlfndr-show-number-hotels">
+            {POST COUNT}
+        &lt/div>
+        &ltdiv class="htlfndr-view">
+            {VIEW TYPE}
+        &lt/div>
+    &lt/div>
+&lt/div>
+&ltsection class="row htlfndr-search-result-content">
+    &ltdiv class="htlfndr-hotel-post-wrapper col-md-4">
+        &ltdiv class="htlfndr-hotel-post">
+            &lta class="htlfndr-hotel-thumbnail" href="hotel-page-v1.html">
+                &ltimg alt="pic1" src="http://placehold.it/260x155">
+            &lt/a>
+            &ltdiv class="htlfndr-hotel-description">
+                &ltdiv class="htlfndr-description-content">
+                    &lth2 class="htlfndr-entry-title">{TITLE}&lt/h2>
+                    &ltdiv class="htlfndr-rating-stars" data-rating="5">
+                        {rating stars}
+                    &lt/div>
+                    &lth5 class="htlfndr-hotel-location">{LOCATION}&lt/h5>
+                    &ltp class="htlfndr-last-booking">{TEXT}&lt/p>
+                &lt/div>
+                &lta class="htlfndr-select-hotel-button" role="button" href="hotel-page-v1.html">select&lt/a>
+                &ltdiv class="htlfndr-hotel-price">
+                    {PRICE INFO}
+                &lt/div>
+            &lt/div>
+        &lt/div>
+    &lt/div>
+    &ltdiv class="htlfndr-hotel-post-wrapper col-md-4">
+        &ltdiv class="htlfndr-hotel-post">
+            &lta class="htlfndr-hotel-thumbnail" href="hotel-page-v2.html">
+                &ltimg alt="pic2" src="http://placehold.it/260x155">
+            &lt/a>
+            &ltdiv class="htlfndr-hotel-description">
+                &ltdiv class="htlfndr-description-content">
+                    &lth2 class="htlfndr-entry-title">{TITLE}&lt/h2>
+                    &ltdiv class="htlfndr-rating-stars" data-rating="5">
+                        {rating stars}
+                    &lt/div>
+                    &lth5 class="htlfndr-hotel-location">{LOCATION}&lt/h5>
+                    &ltp class="htlfndr-last-booking">{TEXT}&lt/p>
+                &lt/div>
+                &lta class="htlfndr-select-hotel-button" role="button" href="hotel-page-v1.html">select&lt/a>
+                &ltdiv class="htlfndr-hotel-price">
+                    {PRICE INFO}
+                &lt/div>
+            &lt/div>
+        &lt/div>
+    &lt/div>
+&lt/section>
+        </pre>
+        <div class="separater"></div>
+        <h6 id="hotelpage">Hotel page</h6>
+        <p>The Hotel page 1 has same grid as Hotel page 2.But has different content and widget. Here is the general structure of the Hotel page 1.</p>
+        <pre class="prettyprint lines">
+&ltbody>
+    &ltdiv class="htlfndr-loader-overlay">&lt/div>
+    &ltdiv class="htlfndr-wrapper">
+       {HEADER}
+       &ltdiv class="container">
+            &ltdiv class="htlfndr-steps">
+                &ltul class="htlfndr-progress">
+                    {PROGRESS STEPS}
+                &lt/ul>
+            &lt/div>
+            &ltdiv class="row">
+                &ltmain id="htlfndr-main-content" class="col-sm-12 col-md-8 col-lg-9" role="main">
+                    &ltsection id="htlfndr-gallery-and-map-tabs" 
+                    class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+                        &ltul>
+                            &ltli>&lta href="#htlfndr-gallery-tab-1">photo&lt/a>&lt/li>
+                            &ltli>&lta href="#htlfndr-gallery-tab-2">map&lt/a>&lt/li>
+                        &lt/ul>
+                        &ltdiv id="htlfndr-gallery-tab-1" class="htlfndr-hotel-gallery">
+                            {SLIDER}
+                        &lt/div>
+                        &ltdiv id="htlfndr-gallery-tab-2">
+                            &ltdiv class="htlfndr-iframe-wrapper">
+                                {MAP}
+                            &lt/div>
+                        &lt/div>
+                    &lt/section>&lt!-- #htlfndr-gallery-and-map-tabs -->
+                    &ltsection id="htlfndr-hotel-description-tabs">
+                        &ltul>
+                            &ltli class="active" data-number="0">
+                                &lta href="#htlfndr-hotel-description-tab-1">description&lt/a>
+                            &lt/li>
+                            &ltli data-number="1">
+                                &lta href="#htlfndr-hotel-description-tab-2">availability&lt/a>
+                            &lt/li>
+                            &ltli data-number="2">
+                                &lta href="#htlfndr-hotel-description-tab-3">amenities&lt/a>
+                            &lt/li>
+                            &ltli data-number="3">
+                                &lta href="#htlfndr-hotel-description-tab-4">reviews&lt/a>
+                            &lt/li>
+                            &ltli data-number="4">
+                                &lta href="#htlfndr-hotel-description-tab-5">write a review&lt/a>
+                            &lt/li>
+                        &lt/ul>
+                        &ltdiv id="htlfndr-hotel-description-tab-1" class="htlfndr-hotel-description-tab">
+                            {TAB1 CONTENT}
+                        &lt/div>
+                        &ltdiv id="htlfndr-hotel-description-tab-2" class="htlfndr-hotel-description-tab">
+                            {TAB2 CONTENT}
+                        &lt/div>
+                        &ltdiv id="htlfndr-hotel-description-tab-3" class="htlfndr-hotel-description-tab">
+                            {TAB3 CONTENT}
+                        &lt/div>
+                        &ltdiv id="htlfndr-hotel-description-tab-4" class="htlfndr-hotel-description-tab">
+                            {TAB4 CONTENT}
+                        &lt/div>
+                        &ltdiv id="htlfndr-hotel-description-tab-5" class="htlfndr-hotel-description-tab">
+                            {TAB5 CONTENT}
+                        &lt/div>
+                    &lt/section>
+                &lt/main>
+                &ltaside id="htlfndr-right-sidebar" class="col-sm-12 col-md-4 col-lg-3 
+                htlfndr-sidebar htlfndr-sidebar-in-right" role="complementary">
+                    &ltdiv class="widget htlfndr-hotel-visit-card">
+                        &ltdiv class="htlfndr-widget-main-content htlfndr-widget-padding">
+                            &ltdiv class="htlfndr-hotel-logo">
+                                {LOGO HOTEL}
+                            &lt/div>
+                            &ltdiv class="htlfndr-hotel-description">
+                                &lth2>{TITLE}&lt/h2>
+                                &ltdiv class="htlfndr-rating-stars">
+                                    {rating stars}
+                                &lt/div>
+                                &lth5 class="htlfndr-hotel-location">&lta href="#">{LOCATION}&lt/a>&lt/h5>
+                            &lt/div>
+                            &ltdiv class="htlfndr-hotel-price">
+                                {PRICE INFO}
+                            &lt/div>
+                        &lt/div>
+                        &lta class="htlfndr-book-now-button" role="button" href="payment.html">book now&lt/a>
+                        &ltdiv class="htlfndr-widget-padding">
+                            &ltdiv class="htlfndr-hotel-contacts">
+                                {HOTEL CONTACTS}
+                            &lt/div>
+                        &lt/div>
+                    &lt/div>
+                    &ltdiv class="widget htlfndr-near-properties">
+                         {CUSTOM WIDGET AREA}
+                    &lt/div>
+                &lt/aside>
+            &lt/div>
+        &lt/div>
+       {FOOTER}
+    &lt/div>&lt!-- .htlfndr-wrapper -->
+    &ltdiv id="htlfndr-sing-up">
+        {SINGUP POPUP}
+    &lt/div>    
+    &ltdiv id="htlfndr-sing-in">
+        {SINGIN POPUP}
+    &lt/div>    
+&lt/body>
+        </pre>        
+        <div class="separater"></div>
+         <h6 id="hotelpage">Hotel page 2</h6>
+        <p>Here is the general structure of the Hotel page 2.</p>
+        <pre class="prettyprint lines">
+&ltbody>
+    &ltdiv class="htlfndr-loader-overlay">&lt/div>
+    &ltdiv class="htlfndr-wrapper">
+       {HEADER}
+       &ltdiv class="container">
+            &ltdiv class="htlfndr-steps">
+                &ltul class="htlfndr-progress">
+                    {PROGRESS STEPS}
+                &lt/ul>
+            &lt/div>
+            &ltdiv class="row">
+                &ltmain id="htlfndr-main-content" class="col-sm-12 col-md-8 col-lg-9" role="main">
+                    &ltheader class="htlfndr-entry-header">
+                        &lth1 class="htlfndr-entry-title">{TITLE}&lt/h1>
+                        &ltdiv class="htlfndr-rating-stars">
+                                    {rating stars}
+                                &lt/div>
+                        &ltdiv class="htlfndr-hotel-contacts">
+                                {HOTEL CONTACTS}
+                            &lt/div>
+                        &lt/header>
+                        &ltsection id="htlfndr-gallery-and-map-tabs" class="ui-tabs ui-widget ui-widget-content 
+                        ui-corner-all">
+                            &ltul>
+                                &ltli>&lta href="#htlfndr-gallery-tab-1">photo&lt/a>&lt/li>
+                                &ltli>&lta href="#htlfndr-gallery-tab-2">map&lt/a>&lt/li>
+                            &lt/ul>
+                            &ltdiv id="htlfndr-gallery-tab-1" class="htlfndr-hotel-gallery">
+                                {SLIDER}
+                            &lt/div>
+                            &ltdiv id="htlfndr-gallery-tab-2">
+                                &ltdiv class="htlfndr-iframe-wrapper">
+                                    {MAP}
+                                &lt/div>
+                            &lt/div>
+                        &lt/section>&lt!-- #htlfndr-gallery-and-map-tabs -->
+                        &ltsection id="htlfndr-hotel-description-tabs">
+                            &ltul>
+                               &ltli class="active" data-number="0">
+                                    &lta href="#htlfndr-hotel-description-tab-1">description&lt/a>
+                                &lt/li>
+                                &ltli data-number="1">
+                                    &lta href="#htlfndr-hotel-description-tab-2">availability&lt/a>
+                                &lt/li>
+                                &ltli data-number="2">
+                                    &lta href="#htlfndr-hotel-description-tab-3">amenities&lt/a>
+                                &lt/li>
+                                &ltli data-number="3">
+                                    &lta href="#htlfndr-hotel-description-tab-4">reviews&lt/a>
+                                &lt/li>
+                                &ltli data-number="4">
+                                    &lta href="#htlfndr-hotel-description-tab-5">write a review&lt/a>
+                                &lt/li>
+                            &lt/ul>
+                            &ltdiv id="htlfndr-hotel-description-tab-1" class="htlfndr-hotel-description-tab">
+                                {TAB1 CONTENT}
+                            &lt/div>
+                            &ltdiv id="htlfndr-hotel-description-tab-2" class="htlfndr-hotel-description-tab">
+                                {TAB2 CONTENT}
+                            &lt/div>
+                            &ltdiv id="htlfndr-hotel-description-tab-3" class="htlfndr-hotel-description-tab">
+                                {TAB3 CONTENT}
+                            &lt/div>
+                            &ltdiv id="htlfndr-hotel-description-tab-4" class="htlfndr-hotel-description-tab">
+                                {TAB4 CONTENT}
+                            &lt/div>
+                            &ltdiv id="htlfndr-hotel-description-tab-5" class="htlfndr-hotel-description-tab">
+                                {TAB5 CONTENT}
+                            &lt/div>
+                        &lt/section>
+                &lt/main>
+                &ltaside id="htlfndr-right-sidebar" class="col-sm-12 col-md-4 col-lg-3 htlfndr-sidebar
+                 htlfndr-sidebar-in-right" role="complementary">
+                    &ltdiv class="widget htlfndr-hotel-visit-card">
+                        &ltdiv class="htlfndr-widget-main-content htlfndr-widget-padding">
+                            &ltdiv class="htlfndr-hotel-logo">
+                                {LOGO HOTEL}
+                            &lt/div>
+                            
+                            &ltdiv class="htlfndr-hotel-price">
+                                {PRICE INFO}
+                            &lt/div>
+                        &lt/div>
+                        &lta class="htlfndr-book-now-button" role="button" href="payment.html">book now&lt/a>
+                    &lt/div>
+                    &ltdiv class="widget htlfndr-near-properties">
+                         {CUSTOM WIDGET AREA}
+                    &lt/div>
+                    &ltdiv class="widget htlfndr-widget-help">
+                         {CUSTOM WIDGET AREA}
+                    &lt/div>
+                &lt/aside>
+            &lt/div>
+        &lt/div>
+       {FOOTER}
+    &lt/div>&lt!-- .htlfndr-wrapper -->
+    &ltdiv id="htlfndr-sing-up">
+        {SINGUP POPUP}
+    &lt/div>    
+    &ltdiv id="htlfndr-sing-in">
+        {SINGIN POPUP}
+    &lt/div>    
+&lt/body>
+        </pre>        
+        <div class="separater"></div>
+        <h6 id="userpage">User page</h6>
+        <p>The User Page has block with The Tabs and block with content of the tabs</p>
+        <pre class="prettyprint lines">
+&ltbody>
+    &ltdiv class="htlfndr-loader-overlay">&lt/div>
+    &ltdiv class="htlfndr-wrapper htlfndr-user-page">
+       {HEADER}
+        &ltdiv class="container">
+            &ltdiv id="htlfndr-edit-card">
+                {EDIT CARD POPUP}
+            &lt/div>    
+            &ltdiv>
+                {ADD CARD POPUP}
+            &lt/div>
+            &ltmain id="htlfndr-main-content" role="main">
+                &ltdiv class="row htlfndr-user-tabs htlfndr-credit-card-page">
+                    &ltdiv class="htlfndr-user-person-navigation-wrapper col-sm-4 col-md-3">
+                        &ltdiv class="htlfndr-user-person-navigation">
+                            &ltdiv class="htlfndr-user-avatar">
+                                &ltimg src="http://placehold.it/130x130" alt="user avatar"/>
+                            &lt/div>
+                            &lth3 class="htlfndr-user-name">john brown&lt/h3>
+                            &lth6 class="htlfndr-user-membership">member since may 2012&lt/h6>
+                            &ltul role="tablist">
+                                &ltli>&lta href="#htlfndr-user-tab-1">
+                                    &lti class="fa fa-user">&lt/i> personal info
+                                &lt/a>&lt/li>
+                                &ltli>&lta href="#htlfndr-user-tab-2">
+                                    &lti class="fa fa-clock-o">&lt/i> booking history
+                                &lt/a>&lt/li>
+                                &ltli>&lta href="#htlfndr-user-tab-3">
+                                    &lti class="fa fa-credit-card">&lt/i> credit cards
+                                &lt/a>&lt/li>
+                                &ltli>&lta href="#htlfndr-user-tab-4">
+                                    &lti class="fa fa-heart-o">&lt/i> wishlist
+                                &lt/a>&lt/li>
+                                &ltli>&lta href="#htlfndr-user-tab-5">
+                                    &lti class="fa fa-wrench">&lt/i> settings
+                                &lt/a>&lt/li>
+                            &lt/ul>
+                        &lt/div>&lt!-- .htlfndr-user-person-navigation -->
+                    &lt/div>&lt!-- .htlfndr-user-person-navigation-wrapper -->
+                    &ltdiv class="htlfndr-user-panel col-sm-8 col-md-9 htlfndr-info-page">
+                        &ltdiv id="htlfndr-user-tab-1" class="htlfndr-description-table">
+                            {TAB1 CONTENT}
+                        &lt/div>
+                        &ltdiv id="htlfndr-user-tab-2" class="htlfndr-description-table">
+                            {TAB2 CONTENT}
+                        &lt/div>
+                        &ltdiv id="htlfndr-user-tab-3" class="htlfndr-description-table">
+                            {TAB3 CONTENT}
+                        &lt/div>
+                        &ltdiv id="htlfndr-user-tab-4" class="htlfndr-description-table">
+                            {TAB4 CONTENT}
+                        &lt/div>
+                        &ltdiv id="htlfndr-user-tab-5" class="htlfndr-description-table">
+                            {TAB5 CONTENT}
+                        &lt/div>
+                    &lt/div>
+                &lt/div>
+            &lt/main>
+        &lt/div>
+        {FOOTER}
+    &lt/div>&lt!-- .htlfndr-wrapper -->
+    &ltdiv id="htlfndr-sing-up">
+        {SINGUP POPUP}
+    &lt/div>    
+    &ltdiv id="htlfndr-sing-in">
+        {SINGIN POPUP}
+    &lt/div>    
+&lt/body>
+        </pre>        
+        <div class="separater"></div>
+</div><!--wrapper-->
+
+
+<div class="wrapper">
+<h3 id="cssFiles"><strong>II) CSS Files and Structure</strong> - <a href="#top">top</a></h3>
+        <h6>style.css</h6>
+        <p>All of the individual theme styles are located in the main Medical Care CSS file - style.css. Also, this file includes JQuery plugins such as JQuery UI Datepicker, as well as Bootstrap files. Hence, in order to make any changes to the styles, you only need to modify style.css. This file is divided into 13 sections, which are labelled the following way:</p>
+
+<pre class="prettyprint lines">     
+1. Fonts,Global styles
+2.0 - Home Page
+2.1 - Header
+    2.1.1 - Navigation
+    2.1.2 - Slider
+    2.1.3 - Search Form
+  2.2 - Content
+    2.2.1 - Top destination (1-st section)
+    2.2.2 - USP (2-nd section)
+    2.2.3 - Categories portfolio (3-rd section)
+    2.2.4 - Visitors (4-th section)
+  2.3 - Footer
+    2.3.1 - Follow Us widget
+    2.3.2 - Back to Top button
+    2.3.3 - Copyright
+3.0 - Search Result Page
+  3.1 - Progress steps
+  3.2 - Grid view
+  3.3 - Row view
+  3.4 - Left Sidebar
+    3.4.1 - Modify Search widget
+    3.4.2 - Search Details widget
+  3.5 - Sort elements section
+  3.6 - Pagination
+  3.7 - Top Sidebar
+4.0 - Hotel Page
+  4.1 - Gallery and Description
+    4.1.1 - Tabs (gallery and map)
+    4.1.2 - Tabs (hotel description)
+  4.2 - Map and Availability
+  4.3 - Gallery and Amenities
+  4.4 - Gallery and Review
+  4.5 - Gallery and Write a Review
+5.0 - Room Page
+6.0 - Search result Rooms Page
+7.0 - Payment Page
+8.0 - Blog Page
+9.0 - Thanks Page
+10.0 - Blog Single Page
+11.0 - Contact us Page
+12.0 - User page
+13.0 - Elements Page
+14.0 - About-us Page
+15.0 - Archive widget
+16.0 - Twitter widget
+17.0 - Personal Info Page
+18.0 - Media queries
+
+</pre>
+<p>In case it is necessary to edit some section of the website, all you have to do is search the CSS file for an appropriate label. Then, you need to scroll down, until you come across the style you want to edit.</p> 
+        <h6>Media queries section</h6>
+        <p>Media queries section contains the styles for media queries, which allow adjusting the theme to be displayed on various devices with different resolutions without changing the content. The file is split into the following sections:</p>
+        <pre class="prettyprint lines">    
+@media (max-width: 1999px) {
+    
+{SOME CODES}
+
+}
+
+@media (max-width: 991px) {
+    
+{SOME CODES}
+
+}
+
+@media (max-width: 767px) {
+
+{SOME CODES}
+
+}
+
+@media (max-width: 500px) {
+
+{SOME CODES}
+
+}
+
+@media (max-width: 340px) {
+
+{SOME CODES}
+
+}
+
+@media (min-width: 501px) and (max-width: 600px)  {
+
+{SOME CODES}
+
+}
+
+@media (min-width: 768px) {
+
+{SOME CODES}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+{SOME CODES}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+{SOME CODES}
+
+}
+
+@media (min-width: 992px) {
+
+{SOME CODES}
+
+}
+
+@media (min-width: 1200px) {
+
+{SOME CODES}
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+only screen and (min--moz-device-pixel-ratio: 1.3),
+only screen and (-o-min-device-pixel-ratio: 2.6/1),
+only screen and (min-device-pixel-ratio: 1.3),
+only screen and (min-resolution: 144dpi),
+only screen and (min-resolution: 1.3dppx) {
+
+{SOME CODES}
+
+}	</pre>
+   <p>In case you need to edit the styles to match the width of a particular device, all you have to do is search the  <strong>style.css</strong> file for an appropriate label. Then, you need to scroll down, until you come across the style you want to edit.</p> 
+   
+        <h4>Additional css files</h4>
+        <ol>
+            <li><strong>bootstrap.min.css</strong> - Bootstrap 3 core styles</li>
+            <li><strong>font-awesome.min.css</strong> - Font Awesome styles </li>
+            <li><strong>ie.css</strong> -Styles for ie</li>
+            <li><strong>jquery-ui.css</strong> - jQuery UI style</li>
+            <li><strong>owl.carousel.css</strong> - Responsive slider for Home page</li>
+            <li><strong>select-style.css</strong> - Selectbox styles </li>
+            <li><strong>style.css</strong> - Theme style </li>
+        </ol>
+</div><!--wrapper-->
+<div class="wrapper">
+<h3 id="javascript"><strong>III) JavaScript</strong> - <a href="#top">top</a></h3>
+<p>The following Javascript files are used in this theme:</p>
+	<ol>
+        <li><strong>bootstrap.min.js</strong> - bootstrap 3 core minified javascript</li>
+        <li><strong>jquery-1.11.3.min.js</strong> - jQuery Core</li>
+        <li><strong>jquery-ui.min.js</strong> - jQuery UI</li>
+        <li><strong>jquery.custom-select.js</strong> - jQuery plugin for stylize select</li>
+        <li><strong>jquery.responsiveTabs.min.js</strong> - A plugin that creates responsive tabs, optimized for all devices</li>
+        <li><strong>jquery.tinysort.js</strong> - TinySort is a small and simple script that will sort any nodeElment by it's text- or attribute value, or by that of one of it's children.</li>
+        <li><strong>jquery.ui.touch-punch.min.js</strong> - Query UI Touch Punch</li>
+        <li><strong>owl.carousel.min.js</strong> - minified responsive slider for Home page</li>
+        <li><strong>script.js</strong> - main theme script file </li>
+        <li><strong>starrr.min.js</strong> - jQuery plugin for rating stars</li>
+	</ol>
+
+	<p>Other than <strong>script.js</strong> all of the plugins featured in this template are packed. This means you won't have to make any changes in these files manually. In fact, you only need to know how to call the method. For more information, please check the plugin author's website, which is listed in <strong>"Sources and Credits"</strong> section.</p>
+        <p><strong>script.js</strong> includes the scripts to call the method for the aforesaid plugin, along with custom scripts. This file is also broken into sections, each labelled appropriately.</p>
+</div><!--wrapper-->
+<div class="wrapper">
+    <h3 id="credits"><strong>IV) Sources and Credits</strong> - <a href="#top">top</a></h3>
+    <p>The following icons, images, css and js files are used in MedicalCare:</p>
+    <ul>
+        <li><a target="_blank" href="http://themeforest.net/item/hotel-finder-online-booking-psd-template/11374923?ref=bestwebsoft">Hotel Finder - Hotel Finder PSD Template</a></li>
+        <li><a target="_blank" href="http://www.jquery.com">jQuery</a></li>  <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
+        <li><a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+        <li><a target="_blank" href="http://www.jqueryscript.net/demo/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel">Owl Carousel</a></li>
+        <li><a target="_blank" href="http://plugins.krajee.com/star-rating"> Bootstrap Star Rating</a></li>
+        <li><a target="_blank" href="https://github.com/shashenko/jquery.custom-select"> Custom Select</a></li>
+        <li><a target="_blank" href="https://github.com/jellekralt/Responsive-Tabs"> Responsive Tabs</a></li>
+        <li><a target="_blank" href="https://github.com/Sjeiti/TinySort"> TinySort</a></li>
+        <li><a target="_blank" href="https://cdnjs.com/libraries/jqueryui-touch-punch"> Query UI Touch Punch</a></li> 
+
+    </ul>
+</div>
+<div class="wrapper">
+    <h3 id="changelog"><strong>V) Changelog</strong> - <a href="#top">top</a></h3>
+    <p><strong>Version 1.1</strong></p>
+    <ul>
+        <li>Bugfix: Bugs of HTML structure and CSS styles have been fixed.</li>
+    </ul>
+    <p><strong>Version 1.0</strong></p>
+    <ul>
+        <li>Release date of Hotel Finder - Responsive Hotel Finder HTML5 Template</li>
+    </ul>
+</div>
+<div class="wrapper">
+    <p>Thank you for purchasing this theme! If you have any questions regarding this template, please feel free to contact us.</p>
+    <p class="append-bottom alt large"><strong>BestWebSoft</strong><br>
+    Email: <a href="support@bestwebsoft.zendesk.com">support@bestwebsoft.zendesk.com</a><br>
+    Website: <a href="https://bestwebsoft.com/">https://bestwebsoft.com/</a><br>
+    <p><a href="#top">Go To Table of Contents</a></p>
+</div>
+</body>
+<script type="text/javascript" src="assets/src/prettify.js"></script>
+    <script> prettyPrint(); </script>
+</html>
